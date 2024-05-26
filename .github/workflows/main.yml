@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      - name: Setup JDK 20
+      - name: Setup JDK 17
         uses: actions/setup-java@v4
         with:
-          distribution: 'Oracle'
+          distribution: 'corretto'
           java-version: 17
 
       - name: Units Tests
