@@ -22,7 +22,7 @@ jobs:
 
       - name: Build the application
         run: |
-          mvn clean
+          mvn clean package DskipTests --file pom.xml
           mvn -B package --file pom.xml
 
 
