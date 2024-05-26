@@ -6,7 +6,7 @@ on:
       - master
 jobs:
   build-deploy:
-    name: Build and Deploy Employee Manager
+    name: Build and Deploy Employees Manager
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
