@@ -3,7 +3,7 @@ name: Build & Deploy Spring app
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build-deploy:
     name: Build and Deploy Employee Manager
@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: action/checkout@v4
-      - name: Setup JDK 17
+      - name: Setup JDK 20
         uses: actions/setup-java@v4
         with:
-          distribution: 'corretto'
+          distribution: 'Oracle'
           java-version: 17
 
       - name: Units Tests
