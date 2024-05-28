@@ -6,9 +6,6 @@ spring:
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
-    Properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
 
     hibernate:
       ddl-auto: update
